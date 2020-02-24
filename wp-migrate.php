@@ -311,8 +311,6 @@
 			$content = $newContent;
 		}
 	});
-
-	echo "\n";
 	
 	// Check if PHP FTP is installed
 	if (!function_exists("ftp_connect") && !$config->{"skip-content"}) {
@@ -344,6 +342,10 @@
 	// Open Wordpress configuration file as text
 	$wpConfig = file_get_contents($config->source->dir . "/wp-config.php");
 
+	/**
+	 * Wordpress configuration regex
+	 * @var string
+	 */
 	$wpRegex = "/\'(.*?)\'\,[| ]\'(.*?)\'/";
 
 	// Get all variables
@@ -444,7 +446,7 @@
 			}
 
 			// Append the data container
-			$header .= ") VALUES (";
+			$header .= ") VALUES ";
 
 			/**
 			 * Appended rows counter
