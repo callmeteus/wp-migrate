@@ -29,30 +29,23 @@ You can do it using `wget https://raw.githubusercontent.com/theprometeus/wp-migr
 # Documentation
 The methods marked as ❗ can only be changed via console arguments.
 
-`--target.ftp.host="ftp.awesomesite.com"`
-
+### `--target.ftp.host="ftp.awesomesite.com"`
 Set the target FTP server host
 
-`--target.ftp.user="flufflyftp"`
-
+### `--target.ftp.user="flufflyftp"`
 Set the target FTP server user
 
-`--target.ftp.password="notafurry"`
-
+### `--target.ftp.password="notafurry"`
 Set the target FTP server password
 
-`--target.ftp.dir="public_html/not_wordpress"`
-
+### `--target.ftp.dir="public_html/not_wordpress"`
 Set the target FTP server directory
 
-`--source.dir="/var/www/definitely_not_wordpress/"`
-
+### `--source.dir="/var/www/definitely_not_wordpress/"`
 Set the source Wordpress directory
 
-❗ `--skip-database=true`
-
+### ❗ `--skip-database=true`
 Skips database migration
 
-❗ `--skip-content=true`
-
+### ❗ `--skip-content=true`
 Skips entire wp-content folder
