@@ -17,3 +17,7 @@ This script uses PHP FTP and MySQLi modules on both servers, make sure they are 
 - Install Wordpress on the target server (this is a TODO, pull requests are welcome)
 - Backup your Wordpress installation
 - Copies Wordpress core files
+
+# TODO
+- Make the target script install Wordpress if not installed
+- Zip subfolders (upload months, plugins and themes) separately, and upload them separately
