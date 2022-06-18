@@ -1,6 +1,7 @@
-
 # wp-migrate
 Wordpress content and database migration script.
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors)
 
 This script uses PHP FTP and MySQLi modules on both servers, make sure they are installed and enabled via CLI (on the source server) and web (on the target server).
 
